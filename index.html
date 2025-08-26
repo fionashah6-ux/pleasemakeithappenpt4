@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our 1 Month Anniversary ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #fff;
+      display: none; /* hidden until password entered */
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      animation: glow 2s infinite alternate;
+    }
+    p {
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #fff; }
+      to { text-shadow: 0 0 20px #ff4da6; }
+    }
+    #lockscreen {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+    }
+    #lockscreen input, #lockscreen button {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1em;
+      text-align: center;
+    }
+    #lockscreen button { background: #ff4da6; color: #fff; cursor: pointer; }
+    .letter {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5em;
+      margin: 30px auto;
+      width: 80%;
+      background: rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .game-section {
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 15px;
+    }
+    img {
+      max-width: 80%;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    textarea {
+      width: 80%;
+      height: 120px;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1em;
+    }
+    .coupon {
+      margin: 20px auto;
+      padding: 15px;
+      border: 2px dashed #fff;
+      border-radius: 12px;
+      font-size: 1.2em;
+      background: rgba(0,0,0,0.2);
+    }
+    .qr {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>💞 Happy 1 Month, My Love 💞</h1>
+  <p>Enjoy this special page I made just for us ✨</p>
+
+  <!-- IMAGES -->
+  <img src="img1.jpg" alt="Memory 1">
+  <img src="img2.jpg" alt="Memory 2">
+  <img src="img3.jpg" alt="Memory 3">
+  <img src="img4.jpg" alt="Memory 4">
+  <img src="img5.jpg" alt="Memory 5">
+  <img src="img6.jpg" alt="Memory 6">
+  <img src="img7.jpg" alt="Memory 7">
+  <img src="img8.jpg" alt="Memory 8">
+  <img src="img9.jpg" alt="Memory 9">
+  <img src="img10.jpg" alt="Memory 10">
+
+  <!-- LOVE LETTER -->
+  <div class="letter">
+    My love, <br>
+    I can’t believe it’s already been a month... (💌 Write your long love letter here in beautiful cursive 💌)
+  </div>
+
+  <!-- GAMES -->
+  <div class="game-section">
+    <h2>🎮 How Well Do We Know Us?</h2>
+    <p>Who said "I love you" first?</p>
+    <button onclick="alert('Correct! It was YOU 😘')">Me</button>
+    <button onclick="alert('Haha nope, try again!')">You</button>
+  </div>
+
+  <div class="game-section">
+    <h2>😂 Funny MCQ</h2>
+    <p>If we were a Bollywood couple, which movie would be ours?</p>
+    <button onclick="alert('YES, Dilwale Dulhania Le Jayenge 🌸')">DDLJ</button>
+    <button onclick="alert('Haha no, but cute guess 💕')">Kabir Singh</button>
+  </div>
+
+  <div class="game-section">
+    <h2>💡 Memory Game</h2>
+    <p>Remember what I was wearing on our first date?</p>
+    <button onclick="alert('Yesss, you got it! 🥰')">Red dress</button>
+    <button onclick="alert('Haha not really 🙈')">Blue jeans</button>
+  </div>
+
+  <div class="game-section">
+    <h2>❌⭕ Tic Tac Toe</h2>
+    <iframe src="https://playtictactoe.org/" width="300" height="300"></iframe>
+  </div>
+
+  <div class="game-section">
+    <h2>🎵 Guess the Song</h2>
+    <button onclick="alert('Correct! Tum Hi Ho ❤️')">Tum Hi Ho</button>
+    <button onclick="alert('Nope, try again 😆')">Sheila ki Jawaani</button>
+  </div>
+
+  <!-- COUPON -->
+  <div class="coupon">
+    🎟 Free Coupon: Unlimited Kisses 💋 + Tight Hugs 🤗 <br>
+    Redeemable anytime, anywhere, forever ❤️
+  </div>
+
+  <!-- QR CODE -->
+  <div class="qr">
+    <h2>Scan for a Surprise 🎶</h2>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.youtube.com/watch?v=G63N2WYtxAw" alt="QR Code">
+  </div>
+
+  <!-- MESSAGE BOX -->
+  <h2>💭 Write how you felt about this</h2>
+  <textarea id="messageBox" placeholder="Type here..."></textarea><br>
+  <button onclick="saveMessage()">Save Note</button>
+
+  <script>
+    // PASSWORD
+    const password = "shutuppt2";
+    const lockscreen = document.createElement("div");
+    lockscreen.id = "lockscreen";
+    lockscreen.innerHTML = `
+      <h2>🔒 Enter Password to Unlock</h2>
+      <input type="password" id="passInput" placeholder="Enter code">
+      <button onclick="checkPass()">Unlock</button>
+    `;
+    document.body.before(lockscreen);
+
+    function checkPass() {
+      const input = document.getElementById("passInput").value;
+      if (input === password) {
+        lockscreen.style.display = "none";
+        document.body.style.display = "block";
+        playSong(0);
+      } else {
+        alert("Wrong password! Try again.");
+      }
+    }
+
+    // PLAYLIST (only last 30s of each)
+    const playlist = [
+      "kkhh_instrumental.mp3",
+      "tu_pehla_pyaar.mp3",
+      "tu_aadatein.mp3",
+      "rang_sharbaton_ka.mp3",
+      "tu_chahiye.mp3",
+      "dil_nu.mp3"
+    ];
+
+    let audio = new Audio();
+    function playSong(i) {
+      if (i >= playlist.length) return;
+      audio.src = playlist[i];
+      audio.onloadedmetadata = () => {
+        let duration = audio.duration;
+        audio.currentTime = Math.max(0, duration - 30); // start last 30s
+        audio.play();
+        setTimeout(() => {
+          audio.pause();
+          playSong(i + 1);
+        }, 30000);
+      };
+    }
+
+    // SAVE NOTE
+    function saveMessage() {
+      const text = document.getElementById("messageBox").value;
+      const blob = new Blob([text], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "love_note.txt";
+      link.click();
+    }
+  </script>
+</body>
+</html>
